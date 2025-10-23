@@ -1,0 +1,236 @@
+/* ====== GLOBAL STYLES ====== */
+body {
+    margin: 0;
+    font-family: 'Istok Web', sans-serif;
+    background-color: #DDF4E7;
+    color: #333;
+}
+
+/* ====== HEADER ====== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4AAA55;
+    padding: 15px 50px;
+}
+
+.logo img {
+    height: 79px;
+    width: auto;
+}
+
+/* ====== NAVIGATION ====== */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f9fffa;
+}
+
+/* ====== HERO SECTION (HOME PAGE) ====== */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero-image img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.hero h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    color: #333;
+}
+
+.hero h1 span {
+    color: #4AAA55;
+}
+
+.quote {
+    font-size: 2rem;
+    font-style: italic;
+    color: #555;
+    margin: 20px 0;
+}
+
+.quote-author {
+    margin-top: 8px;
+    font-weight: bold;
+    color: #4AAA55;
+}
+
+.btn {
+    background-color: #4AAA55;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 35px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #3d954a;
+}
+
+/* ====== COURSES PAGE ====== */
+.courses-container {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.course-card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+}
+
+.course-card h2 {
+    color: #4AAA55;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.course-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.course-btn {
+    background-color: #4AAA55;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.course-btn:hover {
+    background-color: #3d954a;
+}
+
+/* ====== INDIVIDUAL COURSE PAGES (SEWING, FIRST AID, ETC.) ====== */
+.course-container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.course-header {
+    text-align: center;
+    color: #4AAA55;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.course-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.course-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.course-overview, .course-features {
+    width: 45%;
+    background-color: #F9FFF9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.course-overview h2, .course-features h3 {
+    color: #4AAA55;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.course-features-list li, .course-features ul li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.pricing-section {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* ====== FOOTER ====== */
+footer {
+    background-color: #4AAA55;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+/* ====== RESPONSIVE DESIGN ====== */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .course-content {
+        flex-direction: column;
+    }
+
+    .course-overview, .course-features {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .logo img {
+        height: 60px;
+    }
+}
