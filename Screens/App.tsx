@@ -2,7 +2,7 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
-
+// Import screens
 import HomeScreen from './Screens/HomeScreen';
 import CoursesScreen from './Screens/CoursesScreen';
 import FirstAidCourseScreen from './Screens/CoursesScreen';
